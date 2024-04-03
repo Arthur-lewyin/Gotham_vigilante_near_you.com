@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
    
+      <!--Use this for Carousel-->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <!--USe this for lightbox-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+  
 
 </head>
 <body>
@@ -80,6 +87,61 @@
     </div>
 
   
+    <div class="text-center container-fluid">
+        <header id="wanted" class="margin">WANTED CRIMINALS IN GOTHAM</header>
+    </div>
+     <div id="gallery-lightbox" class="row" data-toggle="modal" data-target="#modal">
+        
+        <div class="col-md-4 col-lg-3">
+          <img class="w-100" src="./images/Joker.jpg" alt="First slide" 
+          data-target="#carousel" data-slide-to="0">
+        </div>
+      
+        <div class="col-md-4 col-lg-3">
+          <img class="w-100" src="./images/Harley.jpg" alt="Second slide" 
+          data-target="#carousel" data-slide-to="1">
+        </div>
+      
+        <div class="col-md-4 col-lg-3">
+          <img class="w-100" src="./images/Ivy.jpg" alt="third slide" 
+          data-target="#carousel" data-slide-to="2">
+        </div>
+      
+        <div class="col-md-4 col-lg-3">
+          <img class="w-100" src="./images/face.jpg" alt="last slide" 
+          data-target="#carousel" data-slide-to="3">
+        </div>
+      
+      </div>
+
+      <!--modal-->
+      <div class="modal" id="modal" >
+        <div class="modal-dialog">
+            <div class="modal-content bg-transparent">
+                <div id="carousel" class="carousel slide" data-ride="false">
+
+                    <div class="carousel-item active">
+                        <img class="w-100" src="./images/Joker.jpg" alt="first slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="w-100" src="./images/Harley.jpg" alt="second slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="w-100" src="./images/Ivy.jpg" alt="third slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="w-100" src="./images/face.jpg" alt="last slide">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+
+
     <div class="container-fluid text-center bg-4" id="divWhat">
         <h3 class="margin"> What am I?</h3>
         <p>I'm a night-stalking, crime-fighting vigilante, and a heavy metal rapping machine. I don't feel anything emotionally, except for rage. 24/7, 365, at a million percent. And if you think that there's something behind that, then you're crazy.</p>

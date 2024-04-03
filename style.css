@@ -6,7 +6,7 @@ body
 {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
-    color: #043559;
+    color: #f5f6f7;
 }
 
 
@@ -14,20 +14,9 @@ p {
     font-size: 16px;
 }
 
-.carousel-inner img{
-    width: 100%;
-}
-
-.carousel .carousel-item{
-    height:500px;
-}
-
-.carousel-item img{
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    min-height: 500px;
+header{
+    font-size: 40px;
+    color: rgb(150, 20, 20);
 }
 
 .margin {
@@ -35,31 +24,67 @@ p {
 }
 
 .bg-1 {
-    background-color: #D2B201 ;
+    background-color: #D2B201;
     /* Moss Green */
     color: #fff;
 }
+
+.bg-2 {
+    background-color: #043559;
+    /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff;
+    /* White */
+    color: #555555;
+}
+
+.bg-4 {
+    background-color:#020202 ;
+    /* Black Gray */
+    color: #fff;
+}
+
+.modal button.close {
+    right: 0;
+    outline: 0;
+  }
+    
+ #gallery-lightbox{
+    margin-top: 10px;
+ }
+  #gallery-lightbox img {
+    height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  #gallery-lightbox img:hover {
+    opacity: 0.9;
+    transition: 0.5s ease-out;
+  }
+ 
+.carousel-inner img {
+    width: 100%;
+  }
+.carousel .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+  }
 
 .container-fluid {
     margin-top: 50px;
     padding-top: 70px;
     padding-bottom: 70px;
-}
-
-.bg-4{
-    background-color: #020202;
-    color:#fff;
-}
-
-.imgDiv {
-    height: 350px;
-    overflow: hidden;
-}
-
-.gallery {
-    width: 100%;
-
-    box-shadow: grey 2px 2px 5px;
 }
 
 .navbar {
@@ -75,4 +100,15 @@ p {
 
 .navbar-nav li a:hover {
     color: #001c00 !important;
+}
+
+.gallery {
+    width: 100%;
+
+    box-shadow: grey 2px 2px 5px;
+}
+
+.imgDiv {
+    height: 350px;
+    overflow: hidden;
 }
